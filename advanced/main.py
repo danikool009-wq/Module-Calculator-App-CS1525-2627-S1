@@ -1,15 +1,17 @@
 import operations as o
 import utils as u
 try:
-    num1 = int(input("enter the first number"))
-    num2 = int(input("enter the second number"))
+    number1 = int(input("enter the first number"))
+    number2 = int(input("enter the second number"))
 except ValueError:
     print("Please enter a number")
 if u.get_operation() == "+":
-    print(o.add(num1, num2))
+    print(o.add(number1, number2))
 elif u.get_operation() == "-":
-    print(o.subtract(num1, num2))
+    print(o.subtract(number1, number2))
 elif u.get_operation() == "*":
-    print(o.multiply(num1, num2))
+    print(o.multiply(number1, number2))
 elif u.get_operation() == "/":
-    print(o.divide(num1, num2))
+    print(o.divide(number1, number2))
+
+print("answer calculated")
